@@ -17,3 +17,12 @@ COMPLETADO AQUI (estava faltando):
 O QUE DEU ERRADO: nada alem do ja descrito no repo irmao.
 PRESUNCOES: manifesto segue 1.2.3.0; .msix final pendente de maquina com SDK;
 se a politica do app mudar de forma relevante, revisar esta copia manualmente.
+============================================================
+ETAPA 2 - PRIMEIRO .MSIX GERADO NESTA MAQUINA  [FEITO - 06/10/2026]
+PACOTE: PackageOutput/wavizo.KuaaGerenciadodeprovas_1.2.3.0_x64.msix
+(4.541.232 bytes), unpack OK (identidade 1.2.3.0, zero lixo).
+Mesmos 7 fixes do repo irmao (versoes NuGet reais, sem AppSDK, /f sem /d,
+Mapping sem comentarios, favicons, trava pre-pack, VisualElements valido,
+sem glob *.txt). Detalhe proprio: a trava pre-pack abortou a 1a tentativa
+porque o Mapping do admin ainda nao tinha sido regenerado apos a remocao do
+AppSDK — resolvido com sync-msix.ps1 -App admin e rebuild. Pacote nao assinado.
