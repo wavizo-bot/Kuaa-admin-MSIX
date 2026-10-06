@@ -25,6 +25,7 @@ Kuaa-admin/
 ├── index.html                # PWA entry point
 ├── manifest.webmanifest      # PWA manifest
 ├── service-worker.js         # Service worker for offline support
+├── politica-privacidade.html # Privacy policy (adapted for Gerenciador de Provas)
 ├── initial-student-package.json # Pre-loaded exam package
 └── Host/                     # WebView2 host application
     ├── KuaaAdmin.Host.csproj # .NET 8 project

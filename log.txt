@@ -1,0 +1,19 @@
+============================================================
+LOG DO REPOSITORIO Kuaa-admin-MSIX (o que mudou neste pacote)
+============================================================
+ETAPA 1 - CONSOLIDACAO EM C:\APPS\Kuaa + REVISAO COMPLETA  [FEITO - 06/10/2026]
+Agente: Muse Spark (opencode).
+PEDIDO: idem ao repo do estudante (pasta msix-admin), com a identidade
+wavizo.KuaaGerenciadodeprovas / Store 9PMTPXXJFDGQ.
+O QUE DEU CERTO: move com .git intacto; espelho 100% igual ao dist do admin;
+mesmos fixes do repo irmao (sync, Mapping explicito, build sem caminho fixo,
+Push-Location, remocao do __manus__).
+COMPLETADO AQUI (estava faltando):
+- politica-privacidade.html CRIADA, adaptada de "kuaa Estudante" para "kuaa
+  Gerenciador de Provas" (0 ocorrencias restantes do nome antigo), ja com o
+  texto neutro Android+Windows; como o dist do admin nao tem essa pagina, ela
+  e MSIX-exclusiva: o sync a preserva via Keep e o build-msix a copia (lista
+  $webAssets + README atualizados).
+O QUE DEU ERRADO: nada alem do ja descrito no repo irmao.
+PRESUNCOES: manifesto segue 1.2.3.0; .msix final pendente de maquina com SDK;
+se a politica do app mudar de forma relevante, revisar esta copia manualmente.

@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$ProjectRoot = "C:\APPS\Kuaa-MSIX\Kuaa-admin"
+$ProjectRoot = $PSScriptRoot
 $HostProject = "$ProjectRoot\Host\KuaaAdmin.Host.csproj"
 $OutputDir = "$ProjectRoot\PackageOutput"
 $PackageDir = "$OutputDir\Package"
@@ -52,7 +52,8 @@ Write-Host "`n[2/4] Copying web assets..." -ForegroundColor Yellow
 
 # Copy all files from the root (web assets)
 $webAssets = @(
-    "index.html", "manifest.webmanifest", "service-worker.js", 
+    "index.html", "manifest.webmanifest", "service-worker.js",
+    "politica-privacidade.html",
     "initial-student-package.json"
 )
 
@@ -97,7 +98,14 @@ if (-not (Test-Path $MakeAppx)) {
     throw "MakeAppx.exe not found. Please install Windows 10 SDK."
 }
 
-& $MakeAppx pack /d "$PackageDir" /p "$OutputDir\$PackageName" /l /o /f $MappingFile
+# Os caminhos do Mapping.txt sao relativos: empacota a partir de dentro do
+# diretorio do pacote para que resolvam corretamente em qualquer maquina.
+Push-Location $PackageDir
+try {
+    & $MakeAppx pack /d "$PackageDir" /p "$OutputDir\$PackageName" /l /o /f $MappingFile
+} finally {
+    Pop-Location
+}
 
 if (-not (Test-Path "$OutputDir\$PackageName")) {
     throw "Package creation failed"

@@ -1,0 +1,29 @@
+============================================================
+MANUAL DO REPOSITORIO Kuaa-admin-MSIX (pacote do GERENCIADOR p/ Partner Center)
+============================================================
+Este repo NAO tem codigo-fonte React: ele guarda o ESSENCIAL para gerar o
+pacote MSIX do app administrativo (kuaa Gerenciador de Provas) e subir na
+Microsoft Store. O fonte mora em C:\APPS\Kuaa\kuaa-admin.
+
+IDENTIDADE (igual ao cadastro do Partner Center — NAO TROCAR sem trocar la):
+  Package/Identity/Name ............ wavizo.KuaaGerenciadodeprovas
+  Publisher ........................ CN=57BB464E-553F-45B6-A4ED-B253157408EB
+  PublisherDisplayName ............. wavizo
+  PFN .............................. wavizo.KuaaGerenciadodeprovas_c5p81jb0en0bm
+  Store ID ......................... 9PMTPXXJFDGQ
+  Versao atual do manifesto ........ 1.2.3.0 (AppxManifest.xml + build-msix.ps1)
+
+CONTEUDO: igual ao repo do estudante, trocando Host por KuaaAdmin.Host e a
+politica-privacidade.html (adaptada p/ "Gerenciador de Provas"; o dist do
+admin nao tem essa pagina, entao aqui ela e MSIX-exclusiva e o sync a preserva
+— se a politica do app mudar de forma relevante, revisar esta copia).
+
+FLUXO DE ATUALIZACAO (ordem certa):
+  1. Edita o fonte em C:\APPS\Kuaa\kuaa-admin e roda `npm run build` la.
+  2. Roda `.\sync-msix.ps1 -App admin` em C:\APPS\Kuaa.
+  3. Versao da loja: edita Version em AppxManifest.xml + $PackageName no
+     build-msix.ps1 + este manual (os 3 juntos).
+  4. Roda `.\build-msix.ps1` aqui (precisa SDK do Windows + .NET 8).
+  5. Commit + push; anexa o .msix na submissao do Partner Center (ID acima).
+
+REGRAS: as mesmas do repo do estudante (ver manual.txt de la).
