@@ -26,3 +26,8 @@ Mapping sem comentarios, favicons, trava pre-pack, VisualElements valido,
 sem glob *.txt). Detalhe proprio: a trava pre-pack abortou a 1a tentativa
 porque o Mapping do admin ainda nao tinha sido regenerado apos a remocao do
 AppSDK — resolvido com sync-msix.ps1 -App admin e rebuild. Pacote nao assinado.
+============================================================
+ETAPA 3 - MESMA CORRECAO DO RUNTIME + PACOTE COMPLETO  [FEITO - 07/10/2026]
+O admin tinha o MESMO defeito (closure incompleta -> pediria .NET tambem).
+Rebuild com o build-msix corrigido: 82 MB, unpack com hostfxr/hostpolicy e
+exe abrindo "kuaa Gerenciador de Provas". Valido p/ upload na 9PMTPXXJFDGQ.
