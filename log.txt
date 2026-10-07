@@ -31,3 +31,9 @@ ETAPA 3 - MESMA CORRECAO DO RUNTIME + PACOTE COMPLETO  [FEITO - 07/10/2026]
 O admin tinha o MESMO defeito (closure incompleta -> pediria .NET tambem).
 Rebuild com o build-msix corrigido: 82 MB, unpack com hostfxr/hostpolicy e
 exe abrindo "kuaa Gerenciador de Provas". Valido p/ upload na 9PMTPXXJFDGQ.
+============================================================
+ETAPA 4 - BUMP 1.2.3.0 -> 1.2.4.0 (PREVENCAO)  [FEITO - 07/10/2026]
+Mesmo motivo do app (versao publicada nao pode ser reutilizada): como o admin
+1.2.3.0 provavelmente ja foi submetido, subido para 1.2.4.0 em manifesto +
+$PackageName + README + manual. Exemplo manual do README corrigido p/ /p+/f.
+Pacote regenerado (82 MB), unpack OK (identidade 1.2.4.0 + hostfxr).

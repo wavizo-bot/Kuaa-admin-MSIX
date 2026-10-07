@@ -10,7 +10,7 @@ This repository contains the essential files to build and submit the **kuaa Gere
 - **Package Family Name (PFN)**: `wavizo.KuaaGerenciadodeprovas_c5p81jb0en0bm`
 - **Package SID**: `S-1-15-2-1019287632-1211629304-2026247123-2703169241-4218778349-2026831722-314477589`
 - **Store ID**: `9PMTPXXJFDGQ`
-- **Version**: `1.2.3.0`
+- **Version**: `1.2.4.0`
 
 ## Structure
 
@@ -68,12 +68,12 @@ Kuaa-admin/
 
 3. **Create MSIX with MakeAppx:**
    ```powershell
-   makeappx pack /d PackageOutput\Package /p PackageOutput\wavizo.KuaaGerenciadodeprovas_1.2.3.0_x64.msix /l /o /f Mapping.txt
+   makeappx pack /p PackageOutput\wavizo.KuaaGerenciadodeprovas_1.2.4.0_x64.msix /l /o /f Mapping.txt
    ```
 
 4. **Sign the package (for Store):**
    ```powershell
-   signtool sign /fd SHA256 /f cert.pfx /p password PackageOutput\wavizo.KuaaGerenciadodeprovas_1.2.3.0_x64.msix
+   signtool sign /fd SHA256 /f cert.pfx /p password PackageOutput\wavizo.KuaaGerenciadodeprovas_1.2.4.0_x64.msix
    ```
 
 ## Microsoft Partner Center Submission
