@@ -11,7 +11,7 @@ IDENTIDADE (igual ao cadastro do Partner Center — NAO TROCAR sem trocar la):
   PublisherDisplayName ............. wavizo
   PFN .............................. wavizo.KuaaGerenciadodeprovas_c5p81jb0en0bm
   Store ID ......................... 9PMTPXXJFDGQ
-  Versao atual do manifesto ........ 1.2.5.0 (AppxManifest.xml + build-msix.ps1)
+  Versao atual do manifesto ........ 1.2.6.0 (AppxManifest.xml + build-msix.ps1)
 
 CONTEUDO: igual ao repo do estudante, trocando Host por KuaaAdmin.Host e a
 politica-privacidade.html (adaptada p/ "Gerenciador de Provas"; o dist do
@@ -27,4 +27,5 @@ FLUXO DE ATUALIZACAO (ordem certa):
   5. Commit + push; anexa o .msix na submissao do Partner Center (ID acima).
 
 REGRAS: as mesmas do repo do estudante (ver manual.txt de la).
+
 
