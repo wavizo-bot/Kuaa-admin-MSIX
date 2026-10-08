@@ -37,3 +37,8 @@ Mesmo motivo do app (versao publicada nao pode ser reutilizada): como o admin
 1.2.3.0 provavelmente ja foi submetido, subido para 1.2.4.0 em manifesto +
 $PackageName + README + manual. Exemplo manual do README corrigido p/ /p+/f.
 Pacote regenerado (82 MB), unpack OK (identidade 1.2.4.0 + hostfxr).
+============================================================
+ETAPA 5 - WEBVIEW2 USERDATA P/ LOCALAPPDATA + BUMP 1.2.5.0  [FEITO - 07/10/2026]
+Mesmo defeito do app (mesmo codigo): userDataDir agora e
+LocalAppData\wavizo\KuaaGerenciador\EBWebView. Validado: exe abre "kuaa
+Gerenciador de Provas" + EBWebView no LocalAppData. Bump 1.2.4.0 -> 1.2.5.0.
