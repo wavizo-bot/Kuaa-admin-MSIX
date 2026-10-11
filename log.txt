@@ -46,3 +46,7 @@ Gerenciador de Provas" + EBWebView no LocalAppData. Bump 1.2.4.0 -> 1.2.5.0.
 ETAPA 6 - TELA BRANCA: SERVIDOR LOCALHOST NO HOST + BUMP 1.2.6.0  [FEITO]
 Mesmo fix do app (mesmo codigo): validado GET / 200 + janela + porta propria.
 Bump 1.2.5.0 -> 1.2.6.0 (manifesto+script+README+manual).
+============================================================
+ETAPA 7 - ESPELHO ADMIN DO ACERVO ONLINE  [FEITO 11/10/2026]
+ Mesmo modal Importar da versao estudante. 4 bundles orfaos removidos.
+ SEM bump (segue 1.2.6.0; bump quando for submeter).
