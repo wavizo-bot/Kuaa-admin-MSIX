@@ -51,4 +51,6 @@ ETAPA 7 - ESPELHO ADMIN DO ACERVO ONLINE  [FEITO 11/10/2026]
  Mesmo modal Importar da versao estudante. 4 bundles orfaos removidos.
  SEM bump (segue 1.2.6.0; bump quando for submeter).============================================================
 ETAPA 8 - MODAL DE ACEITE + BUMP 1.2.7.0  [FEITO 11/10/2026]
- Mesmo modal (versao estudante do admin). Bump 1.2.6.0 -> 1.2.7.0.
+ Mesmo modal (versao estudante do admin). Bump 1.2.6.0 -> 1.2.7.0.============================================================
+ETAPA 9 - BACKUP DRIVE + POPUP OAUTH + BUMP 1.2.8.0  [FEITO 12/10/2026]
+ Mesmo backup (versao estudante do admin). Bump 1.2.7.0 -> 1.2.8.0.
